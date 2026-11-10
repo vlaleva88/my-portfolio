@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио | Ванина Лалева</title>
+    <meta name="description" content="Лично портфолио на студентка по софтуерно инженерство: C++, Java, конзолни проекти и GitHub.">
+    <title>Портфолио | [Твоето Име]</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Навигация -->
     <nav class="navbar">
-        <div class="logo">Ванина Лалева</div>
+        <div class="logo">[Твоето Име]</div>
         <ul class="nav-links">
             <li><a href="#about">За мен</a></li>
             <li><a href="#skills">Умения</a></li>
@@ -19,16 +20,32 @@
         </ul>
     </nav>
 
-    <!-- Заглавна секция / За мен -->
+    <!-- За мен -->
     <section id="about" class="hero-section">
         <div class="container">
-            <h1>Здравейте, аз съм <span class="highlight">Ванина Лалева</span></h1>
-            <h2>Бъдещ софтуерен инженер / Програмист</h2>
-            <p class="bio">
-                Мотивиран студент по софтуерно инженерство с фокус върху създаването на чист код, 
-                структурирани алгоритми и уеб технологии. Стремя се към надграждане на академичните си 
-                знания чрез практически проекти и решаване на реални казуси.
-            </p>
+            <h1>Здравейте, аз съм <span class="highlight">[Твоето Име]</span></h1>
+            <h2>Студентка по софтуерно инженерство</h2>
+            <div class="bio">
+                <p>
+                    Студентка съм по [специалност] и все още не съм преценила към коя сфера
+                    на програмирането искам да се развивам. Именно затова избрах тази специалност:
+                    тя ми дава възможност да опитам различни насоки и да разбера кое ми допада
+                    най-много. Засега, според моите най-скромни виждания, се стремя към бекенд
+                    разработка или тестване на софтуер. Харесва ми да разбирам как работи една
+                    система отвътре и да се уверя, че работи правилно.
+                </p>
+                <p>
+                    Най-много практикувам C++ и Java, с които решавам задачи и изграждам конзолни
+                    приложения. С HTML и CSS съм в самото начало, но ги използвам, за да показвам
+                    проектите си онлайн, например в това портфолио. Работя с Git и GitHub и към всеки
+                    проект се старая да пиша ясен README с описание.
+                </p>
+                <p>
+                    Целта ми е да надграждам знанията си чрез практически проекти, да затвърдя
+                    уменията си в Java и C++ и да се науча да работя с бази данни и автоматизирано
+                    тестване. Отворена съм за нови идеи и възможности за учене.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -36,19 +53,63 @@
     <section id="skills" class="section">
         <div class="container">
             <h2>Технически умения</h2>
+
+            <h3 class="subhead">Езици за програмиране</h3>
             <div class="skills-grid">
+
+                <!-- Звездите: --cur = текущо ниво, --tgt = накъде растеш (от 5) -->
                 <div class="skill-card">
-                    <h3>Езици за програмиране</h3>
-                    <p>JavaScript, Python, C++, HTML/CSS</p>
+                    <h4>C++</h4>
+                    <div class="stars" style="--cur: 3; --tgt: 4;" role="img" aria-label="C++: средно ниво, 3 от 5 звезди, в прогрес към 4">★★★★★</div>
+                    <p class="level">Средно ниво <span class="progress-tag">в прогрес</span></p>
+                    <p class="skill-note">Конзолни приложения, ООП, работа с файлове, STL.</p>
                 </div>
+
                 <div class="skill-card">
-                    <h3>Технологии & Рамки</h3>
-                    <p>Git, GitHub, Node.js, Express, SQL</p>
+                    <h4>Java</h4>
+                    <div class="stars" style="--cur: 2; --tgt: 3;" role="img" aria-label="Java: 2 от 5 звезди, в прогрес към 3">★★★★★</div>
+                    <p class="level">Основно към средно <span class="progress-tag">в прогрес</span></p>
+                    <p class="skill-note">Конзолни приложения, класове и обекти, ООП.</p>
                 </div>
+
                 <div class="skill-card">
-                    <h3>Инструменти & Среди</h3>
-                    <p>VS Code, Postman, Linux / Windows</p>
+                    <h4>HTML / CSS</h4>
+                    <div class="stars" style="--cur: 1; --tgt: 2;" role="img" aria-label="HTML и CSS: начално ниво, 1 от 5 звезди, в прогрес към 2">★★★★★</div>
+                    <p class="level">Начално ниво <span class="progress-tag">в прогрес</span></p>
+                    <p class="skill-note">Структура и стилизация на страници, като това портфолио.</p>
                 </div>
+
+            </div>
+
+            <div class="legend">
+                <span><i class="dot dot-now"></i> текущо ниво</span>
+                <span><i class="dot dot-goal"></i> към което се развивам</span>
+                <span><i class="dot dot-empty"></i> оставащо</span>
+            </div>
+
+            <h3 class="subhead">Технологии и инструменти</h3>
+            <!-- Остави само това, което наистина си ползвала. Ако нещо не ти е познато, го махни. -->
+            <div class="tags">
+                <span class="tag">Git</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">Markdown (README)</span>
+                <span class="tag">Visual Studio Code</span>
+                <span class="tag">Windows</span>
+            </div>
+
+            <h3 class="subhead">Знания и концепции</h3>
+            <div class="tags">
+                <span class="tag">Обектно-ориентирано програмиране</span>
+                <span class="tag">Алгоритми и структури от данни</span>
+                <span class="tag">Работа с файлове</span>
+                <span class="tag">Конзолни приложения</span>
+            </div>
+
+            <h3 class="subhead">Искам да науча</h3>
+            <div class="tags">
+                <span class="tag tag-learning">SQL и бази данни</span>
+                <span class="tag tag-learning">Unit тестване (напр. JUnit)</span>
+                <span class="tag tag-learning">REST API</span>
             </div>
         </div>
     </section>
@@ -60,28 +121,52 @@
             <div class="projects-grid">
 
                 <!-- Проект 1 -->
-                <div class="project-card">
-                    <h3>Име на Проект 1</h3>
-                    <p><strong>Проблем и цел:</strong> Уеб приложение за управление на задачи, решаващо проблема с организацията на екипната работа.</p>
-                    <p><strong>Използвани технологии:</strong> HTML, CSS, JavaScript, Node.js</p>
-                    <p><strong>Личен принос:</strong> Разработка на фронтенд интерфейса и интеграция на REST API endpoints.</p>
+                <article class="project-card">
+                    <h3>[Име на Проект 1]</h3>
+                    <p class="project-type">Самостоятелен проект</p> <!-- или: Групов проект, екип от N души -->
+
+                    <p><strong>Проблем и цел:</strong> [Какво прави програмата и каква задача решава. 1-2 изречения.]</p>
+                    <p><strong>Използвани технологии:</strong> [C++ / Java, ...]</p>
+                    <p><strong>Архитектура:</strong> [Кои са основните класове и как си взаимодействат. 1-2 изречения.]</p>
+                    <p><strong>Личен принос:</strong> [Какво си направила ти. При групов проект: твоята точна роля.]</p>
+
+                    <!-- Замени div-а с <img src="images/project1-diagram.png" alt="Диаграма на класовете на Проект 1"> -->
+                    <div class="media-placeholder">Тук добави диаграма на класовете</div>
+
+                    <!-- Замени div-а с <img src="images/project1-console.png" alt="Екранна снимка от изпълнението на Проект 1"> -->
+                    <div class="media-placeholder">Тук добави екранна снимка от изпълнението</div>
+
                     <div class="project-links">
-                        <a href="https://github.com/твоят-username/проект-1" target="_blank" class="btn">Код в GitHub</a>
+                        <a href="https://github.com/твоят-username/проект-1" target="_blank" rel="noopener noreferrer" class="btn">Код в GitHub</a>
+                        <a href="https://github.com/твоят-username/проект-1#readme" target="_blank" rel="noopener noreferrer" class="btn btn-outline">README</a>
                     </div>
-                </div>
+                </article>
 
                 <!-- Проект 2 -->
-                <div class="project-card">
-                    <h3>Име на Проект 2</h3>
-                    <p><strong>Проблем и цел:</strong> Конзолно приложение за анализ на данни и бързо генериране на справки.</p>
-                    <p><strong>Използвани технологии:</strong> C++, STL, File I/O</p>
-                    <p><strong>Личен принос:</strong> Самостоятелен проект — реализиране на основните алгоритми и файловата архитектура.</p>
+                <article class="project-card">
+                    <h3>[Име на Проект 2]</h3>
+                    <p class="project-type">Самостоятелен проект</p>
+
+                    <p><strong>Проблем и цел:</strong> [Какво прави програмата и каква задача решава.]</p>
+                    <p><strong>Използвани технологии:</strong> [C++ / Java, ...]</p>
+                    <p><strong>Архитектура:</strong> [Основни класове и връзки между тях.]</p>
+                    <p><strong>Личен принос:</strong> [Какво си направила ти.]</p>
+
+                    <div class="media-placeholder">Тук добави диаграма на класовете</div>
+                    <div class="media-placeholder">Тук добави екранна снимка от изпълнението</div>
+
                     <div class="project-links">
-                        <a href="https://github.com/твоят-username/проект-2" target="_blank" class="btn">Код в GitHub</a>
+                        <a href="https://github.com/твоят-username/проект-2" target="_blank" rel="noopener noreferrer" class="btn">Код в GitHub</a>
+                        <a href="https://github.com/твоят-username/проект-2#readme" target="_blank" rel="noopener noreferrer" class="btn btn-outline">README</a>
                     </div>
-                </div>
+                </article>
 
             </div>
+
+            <p class="demo-note">
+                Проектите са конзолни приложения, затова демонстрацията се прави на живо от терминала.
+                Екранни снимки и инструкции за стартиране има в README на всеки проект.
+            </p>
         </div>
     </section>
 
@@ -89,10 +174,10 @@
     <section id="contact" class="section">
         <div class="container text-center">
             <h2>Свържете се с мен</h2>
-            <p>Отворен съм за нови възможности, проекти и професионални сътрудничества.</p>
+            <p>Отворена съм за нови възможности, проекти и сътрудничества.</p>
             <div class="contact-links">
-                <a href="https://github.com/твоят-username" target="_blank" class="contact-btn">GitHub</a>
-                <a href="https://linkedin.com/in/твоят-профил" target="_blank" class="contact-btn">LinkedIn</a>
+                <a href="https://github.com/твоят-username" target="_blank" rel="noopener noreferrer" class="contact-btn">GitHub</a>
+                <a href="https://linkedin.com/in/твоят-профил" target="_blank" rel="noopener noreferrer" class="contact-btn">LinkedIn</a>
                 <a href="mailto:your.email@example.com" class="contact-btn">Имейл</a>
             </div>
         </div>
